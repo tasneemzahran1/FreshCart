@@ -25,7 +25,7 @@ export default function Orders() {
     }, [userLogin])
     return <>
         {isLoading ? <div className="loader"></div> : orders?.length > 0 ? <>
-            <h1 className='text-emerald-600 text-2xl font-bold mt-10 xsm:mt-20'>Orders
+            <h1 className='text-emerald-600 text-2xl font-bold mt-10 md:mt-10'>Orders
             </h1>
             <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -75,6 +75,6 @@ export default function Orders() {
                     </tbody>
                 </table>
             </div >
-        </> :<><section className="h-screen"><h1 className='text-2xl text-white text-center capitalize font-bold mt-10 xsm:mt-20'>No orders</h1></section></> }
+        </> :<><section className="h-screen"><h1 className='text-2xl text-white text-center capitalize font-bold md:mt-10'>No orders</h1></section></> }
     </>
 }

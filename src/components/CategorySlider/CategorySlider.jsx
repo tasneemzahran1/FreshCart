@@ -9,7 +9,7 @@ export default function CategorySlider() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 7,
+    slidesToShow: 4,
     slidesToScroll: 3,
     autoplay:true,
     autoplaySpeed:1000,
@@ -28,7 +28,7 @@ export default function CategorySlider() {
     <Slider {...settings}>
         {category.map((cate) => <div className='my-5 text-white'>
               <img src={cate.image} alt="categoryImage" className='w-full object-contain h-[100px]' />
-              <h4>{cate.name}</h4>
+              <h4 className='line-clamp-1'>{cate.name}</h4>
         </div>)}
 
     </Slider>

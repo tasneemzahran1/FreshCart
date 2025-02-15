@@ -39,8 +39,8 @@ export default function Cart() {
   }
   useEffect(() => { getItemsToCart() }, [])
   return <>
-    {isLoading ? <div className="loader"></div> : cartItem?.products.length > 0 ? <>
-      <h1 className='text-emerald-600 text-2xl font-bold xsm:mt-20'>Cart Items
+    {isLoading ? <div className="loader"></div> : cartItem?.products.length > 0 ? <section className='h-screen'>
+      <h1 className='text-emerald-600 text-2xl font-bold md:mt-10'>Cart Items
       </h1>
       <h2 className='text-lg font-semibold my-5 text-white'>Total Price= {cartItem?.totalCartPrice}</h2>
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -105,6 +105,6 @@ export default function Cart() {
         {/* <Link to={`/orders/${cartID}`} className="text-lg font-medium text-white p-2 border-0 m-3 rounded-md bg-emerald-700 dark:text-red-500 hover:bg-emerald-800">Check out</Link> */}
         <button onClick={(() => { deleteCart() })} className="text-lg font-medium text-white p-2 border-0 m-3 rounded-md bg-red-700 dark:text-red-500 hover:bg-red-800">Clear</button>
       </div >
-    </> :<><section className='h-screen'><h1 className='text-2xl mt-10 xsm:mt-20 text-white text-center capitalize font-bold'>No products is added</h1></section> </>}
+    </section> :<><section className='h-screen'><h1 className='text-2xl mt-10 xsm:mt-20 text-white text-center capitalize font-bold'>No products is added</h1></section> </>}
   </>
 }

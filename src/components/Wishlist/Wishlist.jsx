@@ -30,7 +30,7 @@ export default function Wishlist() {
         }
     }
     useEffect(() => { getItemsTolist() }, [])
-    return <>{isLoading ? <div className="loader"></div> : <section className='h-screen'> <h1 className='xsm:mt-20 text-emerald-400 mt-10 text-2xl font-bold'>Wishlist</h1>
+    return <>{isLoading ? <div className="loader"></div> : <section className='h-screen'> <h1 className='md:mt-10 text-emerald-400 mt-10 text-2xl font-bold'>Wishlist</h1>
         <div className="relative overflow-x-auto shadow-md sm:rounded-lg mt-5">
             <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                 <thead className=" text-white text-lg text-center uppercase dark:bg-gray-700 dark:text-gray-400">

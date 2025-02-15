@@ -16,7 +16,7 @@ export default function Products() {
  
 
   return <>
-    <h1 className='text-emerald-400 text-2xl font-bold mt-10 xsm:mt-20'>Products</h1>
+    <h1 className='text-emerald-400 text-2xl font-bold md:mt-10'>Products</h1>
     <div className="row">
       {data?.data?.data.map((product) => <Product key={product._id} product={product}></Product>
       )}

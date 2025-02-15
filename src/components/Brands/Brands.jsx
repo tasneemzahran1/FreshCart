@@ -16,9 +16,9 @@ export default function Brands() {
   useEffect(() => { getAllBrands() })
   return <>
     {isLoading ? <div className="loader"></div> : <>
-      <h1 className='text-emerald-400 text-2xl font-bold mt-10 xsm:mt-20'>Brands</h1>
+      <h1 className='text-emerald-400 text-2xl font-bold md:mt-10'>Brands</h1>
       <div className="row">
-        {allBrands?.map((brand) => <div className='w-1/4 p-3'>
+        {allBrands?.map((brand) => <div className='p-3 xsm:w-full md:w-1/2 lg:w-1/4'>
           <div className="inner">
             <img src={brand.image} alt="brand logo" className='w-full' />
           </div>

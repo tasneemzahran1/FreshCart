@@ -39,7 +39,7 @@ export default function Checkout() {
   });
   return <>
     <section className='h-screen'>
-      <h1 className='xsm:mt-20 text-3xl text-emerald-400 font-bold'>Checkout</h1>
+      <h1 className='md:mt-10 text-3xl text-emerald-400 font-bold'>Checkout</h1>
       <form className="max-w-md mx-auto mt-5 mb-6 pb-6" onSubmit={formik.handleSubmit}>
         <div className="relative z-0 w-full mb-5 group">
           <input type="text" name="details" value={formik.values.details} onChange={formik.handleChange} onBlur={formik.handleBlur} id="details" className="block py-2.5 px-0 w-full text-md text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-emerald-600 peer" placeholder=" " required />

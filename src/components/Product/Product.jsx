@@ -38,7 +38,7 @@ export default function Product({ product}) {
         }
     }
     return <>
-        <div key={product.id} className="w-1/4">
+        <div key={product.id} className="xsm:w-full md:w-1/2 lg:w-1/4">
             <div className="product mx-3 text-white">
                 <Link to={`/productdetails/${product.id}/${product.category.name}`}>
                     <img src={product.imageCover} alt="productimg" className='w-full' />
